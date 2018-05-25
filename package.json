@@ -1,0 +1,38 @@
+{
+  "name": "starter-for-webpack",
+  "version": "1.0.0",
+  "description": "work in progress",
+  "main": "index.html",
+  "scripts": {
+    "start": "http-server -p 3000",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "version:major": "npm version major",
+    "version:minor": "npm version minor",
+    "version:patch": "npm version patch",
+    "git:gh-pages": "git subtree push --prefix dist origin gh-pages",
+    "git:master": "git push origin master",
+    "git:push": "npm run git:master && npm run git:gh-pages",
+    "git:add": "git add . && git add dist",
+    "deploy:dev": "npm run version:minor && npm run git.push"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sbm-it/BIG-Portal-Prototype.git"
+  },
+  "author": "Wade Jakahi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sbm-it/BIG-Portal-Prototype/issues"
+  },
+  "homepage": "https://github.com/sbm-it/BIG-Portal-Prototype#readme",
+  "devDependencies": {
+    "babel-core": "^6.23.1",
+    "babel-loader": "^6.3.2",
+    "babel-preset-es2015": "^6.22.0",
+    "css-loader": "^0.26.1",
+    "file-loader": "^0.10.0",
+    "style-loader": "^0.13.1",
+    "url": "^0.11.0",
+    "url-loader": "^0.5.7"
+  }
+}

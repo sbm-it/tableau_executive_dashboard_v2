@@ -1,0 +1,73 @@
+
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="./css/materialize.min.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="./css/style.css"  media="screen,projection"/>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+      <script type="text/javascript" src="./js/tableau-2.1.0.min.js"></script>
+      <!--  <script type="text/javascript" src="https://tableaudev.uhmc.sunysb.edu/javascripts/api/tableau-2.min.js"></script>
+      <script src="https://use.typekit.net/ozq4gij.js"></script>
+      <script>try{Typekit.load({ async: true });}catch(e){}</script>
+      -->
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+    <nav>
+      <div class="nav-wrapper grey lighten-3">
+        <a href="#!" class="brand-logo"><img id="SB-Logo" src="https://www.stonybrookmedicine.edu/sites/default/files/box-webfiles/img/stony-brook-medicine-logo-horizontal-300.png" alt="Stony Brook Medicine Logo" /></a>
+        <a href="#" data-activates="hamburger" class="button-collapse"><i class="material-icons md-dark">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li id="dashboardUser" style="color: #990000"></li>
+          <li><a href="http://uhmc-mk-bi-prd.uhmc.sunysb.edu/BI/Account/LogIn" target="new" class="btn" style="background-color: #990000">McKesson</a></li>
+          <li><a href="http://uhmc-boe41-p.uhmc.sunysb.edu:8080/BOE/BI" target="new" class="btn" style="background-color: #990000">Crystal</a></li>
+         </ul>
+        <ul class="side-nav" id="hamburger">
+          <li id="dashboardUser" class="teal-text center"></li>
+          <li id="dashboardUserAlternate" class="teal-text center"></li>
+          <li><a href="http://uhmc-mk-bi-prd.uhmc.sunysb.edu/BI/Account/LogIn" target="new" class="btn" style="background-color: #990000">McKesson</a></li>
+          <li><a href="http://uhmc-boe41-p.uhmc.sunysb.edu:8080/BOE/BI" target="new"  class="btn" style="background-color: #990000">Crystal</a></li>
+        </ul>
+      </div>
+    </nav>
+
+
+    <div class="container SB-Chart" id="tableauViz">
+<!--      <img id="SB-Chart" class="responsive-img" alt="Hospital Summary Chart" src=".\images\Overview.png">     -->
+    </div>
+
+    <div class="container">
+      <span class="card-title grey-text text-darken-4"><i class="fa fa-bookmark" style="font-size:20px;"></i>&nbsp;&nbsp;My Favorites</span>
+      <div id="rowFavorites" class="row">
+      </div>
+    </div>
+
+    <!-- Main display -->
+    <div id="divDisplay">
+    </div>
+
+    <footer class="page-footer grey lighten-3" style="padding-top: 0px;">
+      <div class="footer-copyright">
+        <div class="container black-text">© 2017 Copyright</div>
+      </div>
+    </footer>
+      
+      <!--Import jQuery before materialize.js    -->
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="./js/materialize.min.js"></script>
+      <script src="./js/dashboard.js"></script>
+   
+    
+      <script>
+        $(document).ready(function(){
+          $(".button-collapse").sideNav();
+        });
+      
+      </script>
+    </body>
+  </html>
