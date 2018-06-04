@@ -9,10 +9,25 @@ body {
   padding-left: 5px;
 }
 
+
+/*
+Previous settings
 .SB-Chart {
   height: 575px;
   width:700px;
 }
+*/
+
+/*
+06/04/2018 Hasit V Shah
+height updated to 900ox from 575px
+*/
+
+.SB-Chart {
+  height: 900px;
+  width:700px;
+}
+
 
 .container {
   margin-top: 15px;
