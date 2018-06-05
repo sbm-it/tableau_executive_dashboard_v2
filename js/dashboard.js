@@ -383,7 +383,7 @@ dashboard.initializeViz = function () {
     $.get("https://api-dev.stonybrookmedicine.edu/tableautt/v1/trustedToken?user=" + dashboard.usernameAlternate, function (ticket) {
       url = "https://tableaudev.uhmc.sunysb.edu/trusted/" +
         ticket +
-        "/views/SHES20180501/ExecutiveSummary?:embed=y&:showAppBanner=false&:display_count=no&:showVizHome=no&:embed=y&:showVizHome=n&:tabs=n&:toolbar=n&:apiID=handler";
+        "/views/SHES20180501/ExecutiveSummary?:embed=y&:showAppBanner=false&:display_count=no&:showVizHome=no&:embed=y&:showVizHome=n&:tabs=n&:toolbar=n&:apiID=handler&:refresh=yes";
       //alert(ticket + dashboard.usernameAlternate);
       var options = {
         width: placeholderDiv.offsetWidth,
